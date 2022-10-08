@@ -2,14 +2,17 @@
 - [Introduction](#introduction)
 - [What is GitHub](#what-is-github)
 - [Why GitHub](#why-github)
-- [Clone](#clone)
-- [Commits in GitHub](#commits-in-github)
+- [Cloning](#cloning)
+  - [Commits in GitHub](#commits-in-github)
 - [Pull Request (PR)](#pull-request-pr)
 - [GitHub DeskTop Vs Github CLI](#github-desktop-vs-github-cli)
+  - [GitHub Desktop](#github-desktop)
+  - [GitHub CLI](#github-cli)
+  - [The Difference](#the-difference)
 - [Conclusion](#conclusion)
+  - [Contact me](#contact-me)
 
  ## Introduction
-
  In our world today, things need to be kept in a secure easy to retrieve storage system, this ensures reusability and easy access to such resource, this span from things as simple as a basin of water to more complex ones such as the [blockchain]().
 
  As developers who write and maintain code or people in any tech stack, care is taken to ensure that this data _(mostly a codebase, but since software development is more than just writng lines codes and github allows for more than just storing code, we would stick with __data__ throughout this article)_ can be stored on a system for accessibility, reusablity and safety, such systems should have ease of you, afterall why add more complexity to the already complex life of a developer.
@@ -26,8 +29,6 @@ Since the turn of the decade, we have seen lots of improvement in cloud related 
 
 Github is also free to use for its most basic and important functions, you can keep tabs on what other developers or organisations are doing technical wise, fix and contribute to public Repositories (folder containing the data stored on GitHub), known as contributing to Open Source
 
-
-
 GitHub is based on a previously created technology Git, which is an Open Source software used for managing and tracking files (mostly code files), its the most popular and widely used version control system [VCS]() (in simple terms a system that can track changes to a file or document over time), which is important in software development, as developers fix bugs and update previously written code to add features, as many collaborators could be on a single project, git allows each developer to have a copy of the main Repository on their local system, make modifications safely and then [push]() this copy back to the main repository for a possible [merge](), with steps known as commits each with well detailed explanations, git tracks this changes and stores them for reference in case anything breaks or there is need to revert to a previous state.
 
 > Git is the tool that is used to interact with the repositories and allows developers to make changes and effectively track and manages the changes, it runs through the system's [command line]() .GitHub is the remote cloud storage facility for each of the repository, it provides a Graphical User Interface [(GUI)]() on top of Git, these makes it more user friendly and easy to use
@@ -36,7 +37,7 @@ GitHub is based on a previously created technology Git, which is an Open Source 
 
 **To also install Git, follow this [article's]() instructions**
 
-## Clone
+## Cloning
 Cloning is very important when collaborating with other remote team members, as this is a advanced file sharing method, it would enable you to have a copy of that particular repository on your local system
 
 Cloning from the Command Line from whatever operating system is easy, let's examine how to do so 
@@ -62,8 +63,8 @@ it Bash
 - wait a few seconds for the download to be complete
 
 Now that you have cloned (downloaded) the repository, you can work on the project and effectively collaborate with others
-
-## Commits in GitHub
+##Commits
+### Commits in GitHub
 To make commits in your local branch on your system, is to make small meaningful changes to the codebase, and letting git document it for you, this is important as it allows for the following
 - saving the particular change made by the user
 - decribing the change
@@ -106,11 +107,10 @@ Now you have made a commit.
 > note
 >- You can make numerous commits
 >- check the list of all commits from the terminal
-
- >  on your terminal
-~~~ cmd
-   git log
- ~~~~
+>>  on your terminal (to get local history)
+>> ~~~ cmd
+>>  git log
+>> ~~~~
   
 ## Pull Request (PR)
 Now that you are familiar with git and github, how to commit and cloning a repository, you can create a pr to effectively collaborate, this shows that you are done with your changes locally and need to merge with the Main branch (or master), which is usually done by the developer in charge of the project, or whoever is assigned to merging duties,
@@ -132,12 +132,36 @@ So in this order, **you ought to have**
 - push these changes to github by using the git [push]() commands
 - On GitHub navigate to the branch you want to create a PR for
 - look for 'Compare and pull request' button and click it
+  
   ![compare and pull button](https://www.freecodecamp.org/news/content/images/2020/01/compare.png)
+
 - provide necessary details on what you have done, add reviewers etc
+  
   ![PR Image](https://www.freecodecamp.org/news/content/images/2020/01/pullRequest-1.png)
+
 - congratulations you have created a pull request
 - an email notification would be sent to this effect, and when your PR is merged 
 
 
 ## GitHub DeskTop Vs Github CLI
+### GitHub Desktop
+GitHub Desktop is a GitHub [GUI]() for desktop applications, its available for the various OS(Linux, Windows, Ubuntu and Mac), it lets you interact with github with a more friendly interface instead of using git or the command line, everything can be done within the app
+GitHub Desktop is Open Source.
+DownLoad GitHub Desktop from this [link]().
+
+### GitHub CLI
+GitHub CLI is a Command line tool that brings the GitHub experience to the terminal/command line developers work with, developers might feel less productive switching from their workstation to the github interface on the web or any GUI tools, you can create PRs, Merge PRs, Fork Repositories and more, its more of a convenience tool since developers always use the command. Its also Open Source.
+DownLoad GitHub CLI from this [link]().
+
+### The Difference
+GitHub Desktop and GitHub CLI are both convenience tools for the GitHub ecosystem, while one is a visual interface the other lives and works in the command line, both help productive but differ in way they handle their operations
+
 ## Conclusion
+I started this article saying that every body needs some form of database to store data and not worry about losing it, whether its a basin of water, a ledger or more complex data storage systems.
+
+In conclusion we have seen a brief introduction to Git and GitHub, how it aids developers round the globe work together and effectively, also the way it aids public collaborations with public repositories and Open Source collaborations. Every developer needs Git and GitHub to aid productivity and to develop software safely.
+We have also seen how to Clone, make PRs, Commit changes and also tools like GitHub DeskTop and GitHub CLI and their importance in the Tech ecosystem.
+### Contact me
+Go on, making use of these tools you have learnt today, and let me receive your feedbacks from this article or the tools in themselves
+
+Reach me on [david-oh.netlify.com]().
